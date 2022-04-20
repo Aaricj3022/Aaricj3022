@@ -1,13 +1,6 @@
-ubuntu
+nginx:
 
-user name is ubuntu
 sudo -i
-apt install nginx -y
+sudo amazon-linux-extras install nginx1 -y
 service nginx start
-copy the IP and check in browser
-servce nginx stop
-apt install apache2 -y
-
-apt-get update
-sudo apt-get install apache2 -y
-service apache2 start
+copy the public ip and check in the browser
