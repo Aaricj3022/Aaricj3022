@@ -1,27 +1,13 @@
-STEP 1 - Connect to Linux system ( create ec2 server via aws console)
+ubuntu
 
-STEP 2 - Install DOCKER
+user name is ubuntu
+sudo -i
+apt install nginx -y
+service nginx start
+copy the IP and check in browser
+servce nginx stop
+apt install apache2 -y
 
-sudo yum -y update
-sudo yum install -y docker
-
-docker
-docker --version
-
-STEP 3 - start DOCKER
-
-sudo service docker start
-docker info
-sudo usermod -a -G docker "user" ( to avoid using sudo)
-
-docker info
-
-docker run hello-world : to run hello-world image
-docker images : to get list of images present locally
-docker ps : to get list of running containers
-docker ps -a .  : to get list of all containers
-
-STEP 4 - stop DOCKER
-sudo service docker stop
-uninstall DOCKER
-sudo yum remove docker
+apt-get update
+sudo apt-get install apache2 -y
+service apache2 start
